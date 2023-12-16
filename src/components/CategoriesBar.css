@@ -1,0 +1,39 @@
+.categories_bar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    overflow-x: scroll;
+    padding: 0.5rem 0;
+    font-size: 14px;
+    background-color: var(--color-dark);
+    user-select: none;
+    z-index: 888;
+}
+
+.categories_bar span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 0.8rem;
+    margin-right: 0.75rem;
+    border: 1.5px solid var(--color-text);
+    border-radius: 10px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.categories_bar span:hover {
+    color: var(--color-primary);
+    background-color: transparent;
+    border-color: var(--color-primary);
+}
+
+.categories_bar span.active {
+    color: var(--color-text);
+    background-color: var(--color-primary);
+    border-color: var(--color-border);
+}
+
+.categories_bar::-webkit-scrollbar {
+    width: 0px;
+}
